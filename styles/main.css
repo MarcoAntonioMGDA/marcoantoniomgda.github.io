@@ -48,6 +48,7 @@ header img {
     width: 150px;
     height: auto;
     float: right;
+    border: 1px solid gold;
 }
 
 footer {

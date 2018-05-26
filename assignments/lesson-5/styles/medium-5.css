@@ -1,0 +1,14 @@
+.forecast {
+       display: none;
+    }
+
+
+@media only screen and (min-width: 37.5em) {
+
+    nav button {
+        display: none;
+    }
+    .forecast {
+       display: block;
+    }
+}

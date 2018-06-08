@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+    max-width: 1500px;
+}
+
+header {
+    background: #89AAE6;
+    display: flex;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+header img {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+
+/* Here the code for nav*/
+
+nav button {
+    color: #ac80a0;
+    margin: .5rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+nav button:hover {
+    color: white;
+}
+
+nav {
+    background-color: #0471a6;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #ac80a0;
+}
+
+nav ul li .active {
+    background-color: #ac80a0;
+    color: white;
+}
+
+nav .hide {
+    display: none;
+}
+
+/* here the code for nav */
+
+.flexweather {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.highlow,
+.current,
+.conditions,
+.sunnyblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.highlow p,
+.conditions p {
+    padding: 10px;
+}
+
+.wst {
+    text-align: center;
+}
+
+#windchilout {
+    background: #3695b5;
+    color: white;
+    font-size: 25px;
+}
+
+
+.current picture img {
+    width: 100px;
+    height: 100px;
+}
+
+.current {
+    display: flex;
+}
+
+/* Code for grid*/
+
+.grid {
+    padding: 0% 5% 0% 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+
+.grid img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* Ends here*/
+
+main h2 {
+    text-align: center;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+
+main figure img {
+    width: 100%;
+}
+
+
+
+
+.forecast {
+    text-align: center;
+}
+
+.forecast table {
+    margin: auto
+}
+
+/* Code for Table */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table td {
+    border: 1px solid #3695b5;
+    padding: 8px;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3695b5;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+table td:hover {
+    background: #ddd;
+}
+
+table th:hover {
+    background-color: #3685b5;
+}
+
+/*Here I end my code for my table*/
+
+.artname {
+    text-align: center;
+}
+
+.flexdiv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexdivcontent {
+    width: 48%;
+    min-width: 230px;
+    padding: 5px;
+}
+
+
+.newpic {
+    width: 100%;
+    filter: drop-shadow(8px 8px 10px gray);
+    border-radius: 10px;
+}
+
+footer {}
+
+.contact,
+.footer-bar {
+    background: #3685B5;
+}
+
+.contact h4 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contactlinks {
+    text-decoration: none;
+    color: #3c2837;
+}
+
+.contactlinks:hover {
+    color: white;
+}
+
+.footer-bar h4 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+#currentdate:hover {
+    text-shadow: 0.2px 0.2px #ac80a0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

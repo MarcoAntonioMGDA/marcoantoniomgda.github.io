@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Build | Peer Review</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="This is the official Web Page of Photo Gallery">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img alt="site logo" src="images/logotable.png">
+        <div>
+            <h1>Table Build</h1>
+            <h3>For Peer Review</h3>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="active" href="#">Table Bluid</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <figure>
+
+            <img alt="promo_picture" src="images/tablesmall.jpg" srcset="images/tablesmall.jpg 400w, images/tablemedium.jpg 900w,
+images/tablelarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px) 860px, 1026px">
+            <!--
+            <img class="smalllogo" alt="logo for small view" src="images/promosmall.jpg">
+            <img class="mediumlogo" alt="logo for medium view" src="images/promomedium.jpg">
+            <img class="largelogo" alt="logo for large view" src="images/promolarge.jpg">
+-->
+        </figure>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        ACME Wildwest
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4870</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td class="novsell">$7,500</td>
+                </tr>
+                <tr>
+                    <td><em>Black Friday</em></td>
+                    <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 14.06.2018 by Marco A. Bustillos</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+
+    <footer>
+
+        <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+        <section class="contact">
+            <h4>Call us in order to find more information <a href="tel:+593982345160" class="contactlinks">+593(09)234-160</a> | Av. Esmeraldas and Guayaquil, EC 230201 <a href="https://www.google.com.ec/maps/place/Marbust+Technology/@-0.250824,-79.1760581,15z/data=!4m2!3m1!1s0x0:0xed0c96cffb8542dd?sa=X&ved=0ahUKEwj6taP1kqLbAhUQ0lMKHeQ4C9MQ_BIIrgEwDw" target="_blank" class="contactlinks">Google Map</a></h4>
+        </section>
+        <section class="footer-bar">
+            <h4>&copy;2018 Marco Antonio Bustillos Quiroz | All Rights Reserved | WITWL | <span id="currentdate"></span></h4>
+        </section>
+    </footer>
+
+</body>
+
+</html>

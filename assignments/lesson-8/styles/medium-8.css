@@ -1,0 +1,46 @@
+.forecast {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0% 5% 0% 5%;
+
+    }
+
+
+
+}

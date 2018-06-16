@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 * {
     box-sizing: border-box;
 }
@@ -27,7 +28,7 @@ footer {
 }
 
 header {
-    background: #89AAE6;
+    background: #7fb9c2;
     display: flex;
 }
 
@@ -46,7 +47,7 @@ header img {
 /* Here the code for nav*/
 
 nav button {
-    color: #ac80a0;
+    color: #76ad84;
     margin: .5rem 2%;
     background-color: transparent;
     border: none;
@@ -58,7 +59,7 @@ nav button:hover {
 }
 
 nav {
-    background-color: #0471a6;
+    background-color: #628ca6;
 }
 
 nav ul {
@@ -77,11 +78,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ac80a0;
+    background-color: #76ad84;
 }
 
 nav ul li .active {
-    background-color: #ac80a0;
+    background-color: #76ad84;
     color: white;
 }
 
@@ -183,136 +184,73 @@ main figure img {
 /* Code for Table */
 
 table {
+    margin: auto;
     border-collapse: collapse;
-    width: 90%;
-}
-
-table td {
-    border: 1px solid #3695b5;
-    padding: 8px;
-}
-
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #3695b5;
-    color: white;
-    border: 1px solid #ffffff;
-    padding: 8px;
-}
-
-table td:hover {
-    background: #ddd;
-}
-
-table th:hover {
-    background-color: #3685b5;
-}
-
-/* Here the code for my form */
-
-.stormreporth3 {
-    text-align: center;
-}
-
-form fieldset {
-    margin: 10px;
-    border: 5px solid #0471a6;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    filter: drop-shadow(6px 6px 8px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+    font-size: 18px;
 
 }
 
-form legend {
-    color: #0471a6;
-    padding: 15px;
+
+table thead tr th {
+    background: #7fb9c2;
+    color: black;
     font-size: 30px;
-    text-align: center;
 }
 
-form label.topl,
-form div {
-    display: block;
-    padding-top: 1rem;
-    color: #a30f0f;
+table thead tr th:hover {
+    background: #5c8389;
+}
+
+table tbody tr th {
     font-size: 20px;
-}
-
-
-form label.topl input,
-form label.topl select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 30rem;
-    background-color: rgba (0, 0, 0, 0.1);
-    margin: auto;
-
-}
-
-.sendbuton {
-    display: flex;
-}
-
-form input#submitbut {
-    border: none;
-    background-color: #ac80a0;
+    background: #628ca6;
     color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    width: 96%;
-    max-width: 20rem;
-    margin: auto;
 }
 
-form input#submitbut:hover {
-    background-color: #674b5f;
+table tbody tr th:hover {
+    background: #405c6d;
 }
 
-form input.rangesel {
-    width: 100%;
-    max-width: 30rem;
+
+th,
+td {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #bbbbbb;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-form label.topl input:required {
-    border-left: #ac80a0 solid 6px;
+tr:nth-child(even) {
+    background-color: #e7f0ed;
 }
 
-form label.topl input:required:valid {
-    border-left: green solid 6px;
+tr:nth-child(even):hover {
+    background-color: #c1c7c5;
 }
 
-.stormyrate {
-    display: block;
-    padding-top: 1rem;
-    color: #a30f0f;
-    font-size: 20px;
+tr:nth-child(odd) {
+    background-color: #e7ffed;
 }
 
-#ratingvalue {
-    color: #a30f0f;
-    font-size: 20px;
+tr:nth-child(odd):hover {
+    background-color: #b7d3be;
 }
 
-form textarea {
-    width: 100%;
-    max-width: 30rem;
-    height: 200px;
+.novsell {
+    color: white;
+    background: #628ca6;
 }
 
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
+tfoot td {
+    background: #7fb9c2;
+}
+
+tfoot td:hover {
+    background: #405c6d;
 }
 
 /*Here I end my code for my table*/
@@ -340,11 +278,10 @@ form label.sbs {
     border-radius: 10px;
 }
 
-footer {}
 
 .contact,
 .footer-bar {
-    background: #3685B5;
+    background: #628ca6;
 }
 
 .contact h4 {

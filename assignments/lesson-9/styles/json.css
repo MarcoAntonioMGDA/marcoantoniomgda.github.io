@@ -1,0 +1,81 @@
+/* || general styles */
+
+@import url('https://fonts.googleapis.com/css?family=VT323');
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background: #dbdbdb;
+}
+
+.backvideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translatex(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+h1,
+h2 {
+    font-family: 'VT323', monospace, cursive;
+}
+
+/* header styles */
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(38, 139, 38, 0.38);
+    border-radius: 5px;
+}
+
+/* section styles */
+
+section article {
+    width: 33%;
+    float: left;
+    height: 300px;
+    background: rgba(253, 255, 193, 0.79);
+    padding: 1px;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+    background: #decece;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 5px;
+}
+
+h2:hover {
+    background: #baa1a1;
+}
+
+header {
+    background: #c1c1c1;
+    border-radius: 30px;
+}

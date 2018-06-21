@@ -8,11 +8,12 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="This is the official Web Page of Franklin City">
     <link rel="stylesheet" href="/styles/normalize.css">
-<link rel="stylesheet" href="styles/main-9.css">
-<link rel="stylesheet" href="styles/medium-9.css">
-<link rel="stylesheet" href="styles/large-9.css">
-    <script src="scripts/hamburger.js"></script>
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
 </head>
 
@@ -28,7 +29,7 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a class="active" href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
@@ -41,38 +42,33 @@
         <figure>
             <img alt="promo_picture" src="images/promosmall.jpg" srcset="images/promosmall.jpg 400w, images/promomedium.jpg 900w,
 images/promolarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px) 860px, 1026px">
-            <!--
-            <img class="smalllogo" alt="logo for small view" src="images/promosmall.jpg">
-            <img class="mediumlogo" alt="logo for medium view" src="images/promomedium.jpg">
-            <img class="largelogo" alt="logo for large view" src="images/promolarge.jpg">
--->
         </figure>
         <h2>Franklin</h2>
-
-
+        <script src="scripts/windchill.js"></script>
         <section class="weather-summary">
             <h3 class="wst">Weather Summary</h3>
             <div class="flexweather">
-
                 <div class="current">
-                    <span class="sunnyblock">Sunny</span>
+                    <span id="weatherdescription" class="sunnyblock"></span>
                     <picture>
-                        <img src="images/sun.png" alt="">
+                        <img src="images/weathericon.png" alt="" id="weather_icon">
                     </picture>
                 </div>
                 <div class="highlow">
-                    <p>High: <b><input type="text" id="temphigh" size="2" maxlength="3" value="90"> &deg;F</b></p>
+                    <p>High: <b><input type="text" id="temphigh" size="5" maxlength="6"> &deg;F</b></p>
 
 
-                    <p>Low: <b><input type="text" id="templow" size="2" maxlength="3" value="66"> &deg;F</b></p>
+                    <p>Low: <b><input type="text" id="templow" size="5" maxlength="6"> &deg;F</b></p>
                 </div>
                 <div class="conditions">
                     <p>Precipitation: <b>0%&nbsp;</b></p>
-                    <p>Wind Speed: <b><input type="text" id="windspeed" size="1" maxlength="2" value="5"> mpg SW</b></p>
+                    <p>Wind Speed: <b><input type="text" id="windspeed" size="3" maxlength="5"> mpg SW</b></p>
                 </div>
             </div>
+            <h3 class="wst">The Current Weather is: <span id="currentweather"></span></h3>
             <h3 class="wst">The Wind Chill according our predictions is: <span id="windchilout"></span></h3>
             <h5 class="wst">If you want to change the values according to your predictions, and obtain the new WindChild, you can do it by changing the text inside the text boxes and pressing over the next button <button type="button" onclick="windchill2()">Here</button></h5>
+            <h6 class="copyrightowm">We have used an API from <a href="http://openweathermap.org" target="_blank">OpenWeatherMap.org</a></h6>
 
         </section>
 
@@ -109,16 +105,42 @@ images/promolarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px)
                 </tbody>
             </table>
         </section>
-
+        <script>
+            var towndata = new XMLHttpRequest();
+            var requrl = "https://byui-cit230.github.io/weather/data/towndata.json";
+            towndata.open('GET', requrl, true);
+            towndata.send();
+            towndata.onload = function() {
+                var obtainedata = JSON.parse(towndata.responseText);
+                console.log(obtainedata);
+                document.getElementById("frankname").innerHTML = obtainedata.towns[0].name;
+                document.getElementById("frankmoto").innerHTML = obtainedata.towns[0].motto;
+                document.getElementById("frankyear").innerHTML = obtainedata.towns[0].yearFounded;
+                document.getElementById("frankpopulation").innerHTML = obtainedata.towns[0].currentPopulation;
+                document.getElementById("frankaverage").innerHTML = obtainedata.towns[0].averageRainfall;
+                document.getElementById("frankevent1").innerHTML = obtainedata.towns[0].events[0];
+                document.getElementById("frankevent2").innerHTML = obtainedata.towns[0].events[1];
+                document.getElementById("frankevent3").innerHTML = obtainedata.towns[0].events[2];
+            }
+        </script>
         <article>
-            <h3 class="artname">Franklin Breaks Record</h3>
+            <h3 class="artname"><span id="frankname"></span> Breaks Record</h3>
             <div class="flexdiv">
                 <div class="flexdivcontent">
                     <img alt="article picture" src="images/city.JPG" class="newpic">
 
                 </div>
                 <div class="town-article flexdivcontent">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus, possimus recusandae laboriosam dignissimos eligendi nesciunt? Labore, nesciunt aut. Sunt totam in alias optio, quisquam odit necessitatibus voluptatibus quia autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quis, assumenda saepe placeat enim, voluptate architecto sapiente incidunt vero, dolorem natus? Perspiciatis odit labore doloremque magni rerum, quisquam, ut et repellendus! Eveniet itaque nemo animi eligendi, illum architecto quidem amet doloribus! Pariatur maiores cum, corporis fugiat, nesciunt maxime. Nesciunt dolore, alias, laboriosam voluptatem suscipit saepe sunt eos aliquid quam quisquam.
+                    <h4><span class="hometitleb2">Moto:</span> <span id="frankmoto" class="homemotos"></span></h4>
+                    <h4><span class="hometitleb2">Year Founded:</span> <span id="frankyear"></span></h4>
+                    <h4><span class="hometitleb2">Current Population:</span> <span id="frankpopulation"></span></h4>
+                    <h4><span class="hometitleb2">Average RainFall:</span> <span id="frankaverage"></span></h4>
+                    <h4 class="homemotos hometitleb2">Events</h4>
+                    <ul>
+                        <li id="frankevent1"></li>
+                        <li id="frankevent2"></li>
+                        <li id="frankevent3"></li>
+                    </ul>
 
                 </div>
             </div>

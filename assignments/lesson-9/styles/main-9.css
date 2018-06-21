@@ -377,3 +377,103 @@ footer {}
     display: table;
     clear: both;
 }
+
+/* Home Web Page */
+
+.wstory {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wstorycont {
+    width: 100%;
+    min-width: 236px;
+    padding: 20px;
+    background: #3685B5;
+    margin: 4px;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.wstorycont img {
+    width: 100%;
+}
+
+.homeimgc {
+    width: 100%;
+}
+
+.homemotos {
+    font-style: italic;
+}
+
+.hometitleb {
+    color: #ffffff;
+}
+
+.homecities article {
+    padding: 5px;
+    margin: 2px;
+}
+
+.homecities article:hover {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.harticlescont {
+    background: #3685B5;
+    padding: 10px;
+}
+
+.homeimgc,
+.wstorycont img {
+    border-radius: 20px;
+}
+
+.homeimgc:hover,
+.wstorycont img:hover {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+/* Here buttons code */
+
+.citiesbu div {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background: #ac80a0;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid;
+}
+
+.citiesbu div:hover {
+    background: #88617d;
+}
+
+.citiesbu {
+    text-decoration: none;
+    color: white;
+}
+
+.citiesbu div:hover {
+    color: black;
+}
+
+.hometitleb2 {
+    color: #1a6d6d;
+}
+
+.copyrightowm {
+    text-align: center;
+}
+
+#currentweather {
+    background: #364eb5;
+    color: white;
+    font-size: 20px;
+}
+
+/* This COde ends here*/

@@ -1,4 +1,4 @@
-window.onload = function datenew() {
+window.onload = function currentdateprogram() {
     var d = new Date();
 
     // Here we obtain the name of the day w/ an array

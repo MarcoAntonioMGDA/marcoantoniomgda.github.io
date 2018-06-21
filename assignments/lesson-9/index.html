@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WITWL | Home</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="This is the official Web Page of Photo Gallery">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="styles/main-9.css">
+  <link rel="stylesheet" href="styles/medium-9.css">
+  <link rel="stylesheet" href="styles/large-9.css">
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/homecities.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <img alt="site logo" src="images/logo.png">
+    <div>
+      <h1>WITWL</h1>
+      <h3>What is the weather like?</h3>
+    </div>
+  </header>
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="franklin-9.html">Franklin</a></li>
+      <li><a href="#">Greenville</a></li>
+      <li><a href="#">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery-9.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <figure>
+
+      <img alt="promo_picture" src="images/homesmall.jpg" srcset="images/homesmall.jpg 400w, images/homemedium.jpg 900w,
+images/homelarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px) 860px, 1026px">
+    </figure>
+    <section class="wstory">
+      <div class="wstorycont">
+        <h2 class="hometitleb">Weather Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque fuga temporibus repellendus dicta ab distinctio excepturi nihil. Ut perferendis consectetur dolore, architecto maiores eveniet et doloribus rem ratione quasi quae labore. Illum illo, doloremque exercitationem distinctio totam soluta iste aspernatur necessitatibus, sit voluptatem corporis, in cum laborum cupiditate temporibus officia dolorem maiores repellendus! Necessitatibus amet optio reprehenderit ut eaque!</p>
+      </div>
+      <div class="wstorycont">
+        <img alt="weather story picture" src="images/home/story.jpg">
+      </div>
+    </section>
+    <section>
+      <h2>Discover our Cities</h2>
+      <div class="homecities">
+        <article class="harticlesflex">
+          <div class="harticlescont">
+            <img class="homeimgc" alt="Franklin City" src="images/home/frank.jpg">
+          </div>
+          <div class="harticlescont">
+            <h2 id="frankname" class="hometitleb"></h2>
+            <h4><span class="hometitleb">Moto:</span> <span id="frankmoto" class="homemotos"></span></h4>
+            <h4><span class="hometitleb">Year Founded:</span> <span id="frankyear"></span></h4>
+            <h4><span class="hometitleb">Current Population:</span> <span id="frankpopulation"></span></h4>
+            <h4><span class="hometitleb">Average RainFall:</span> <span id="frankaverage"></span></h4>
+            <h4 class="homemotos hometitleb">Events</h4>
+            <ul>
+              <li id="frankevent1"></li>
+              <li id="frankevent2"></li>
+              <li id="frankevent3"></li>
+            </ul>
+            <a class="citiesbu" href="franklin-9.html">
+              <div>Visit</div>
+            </a>
+          </div>
+        </article>
+        <article class="harticlesflex reverseflex">
+          <div class="harticlescont">
+            <img class="homeimgc" alt="weather story picture" src="images/home/green.jpg">
+          </div>
+          <div class="harticlescont">
+            <h2 id="greenname" class="hometitleb"></h2>
+            <h4><span class="hometitleb">Moto:</span> <span id="greenmotos" class="homemotos"></span></h4>
+            <h4><span class="hometitleb">Year Founded:</span> <span id="greenyear"></span></h4>
+            <h4><span class="hometitleb">Current Population:</span> <span id="greenpopulation"></span></h4>
+            <h4><span class="hometitleb">Average RainFall:</span> <span id="greenaverage"></span></h4>
+            <h4 class="homemotos hometitleb">Events</h4>
+            <ul>
+              <li id="greenevent1"></li>
+              <li id="greenevent2"></li>
+              <li id="greenevent3"></li>
+              <li id="greenevent4"></li>
+            </ul>
+            <a class="citiesbu" href="#">
+              <div>Visit</div>
+            </a>
+          </div>
+        </article>
+        <article class="harticlesflex">
+          <div class="harticlescont">
+            <img class="homeimgc" alt="weather story picture" src="images/home/spring.jpg">
+          </div>
+          <div class="harticlescont">
+            <h2 id="springname" class="hometitleb"></h2>
+            <h4><span class="hometitleb">Moto:</span> <span id="springmotos" class="homemotos"></span></h4>
+            <h4><span class="hometitleb">Year Founded:</span> <span id="springyear"></span></h4>
+            <h4><span class="hometitleb">Current Population:</span> <span id="springpopulation"></span></h4>
+            <h4><span class="hometitleb">Average RainFall:</span> <span id="springaverage"></span></h4>
+            <h4 class="homemotos hometitleb">Events</h4>
+            <ul>
+              <li id="springevent1"></li>
+              <li id="springevent2"></li>
+              <li id="springevent3"></li>
+            </ul>
+            <a class="citiesbu" href="#">
+              <div>Visit</div>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+    <section class="contact">
+      <h4>Call us in order to find more information <a href="tel:+593982345160" class="contactlinks">+593(09)234-160</a> | Av. Esmeraldas and Guayaquil, EC 230201 <a href="https://www.google.com.ec/maps/place/Marbust+Technology/@-0.250824,-79.1760581,15z/data=!4m2!3m1!1s0x0:0xed0c96cffb8542dd?sa=X&ved=0ahUKEwj6taP1kqLbAhUQ0lMKHeQ4C9MQ_BIIrgEwDw" target="_blank" class="contactlinks">Google Map</a></h4>
+    </section>
+    <section class="footer-bar">
+      <h4>&copy;2018 Marco Antonio Bustillos Quiroz | All Rights Reserved | WITWL | <span id="currentdate"></span></h4>
+    </section>
+  </footer>
+
+</body>
+
+</html>

@@ -19,4 +19,31 @@
         padding: .4rem 0;
     }
 
+    .homecities {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .homecities article {
+        width: 32%;
+    }
+
+    .harticlescont {
+        width: 100%;
+    }
+    .wstory {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .wstorycont {
+        width: 49%;
+        padding: 20px;
+        background: #3685B5;
+        margin: 4px;
+    }
+    .wstorycont img {
+        width: 100%;
+    }
 }

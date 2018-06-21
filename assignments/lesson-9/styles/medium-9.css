@@ -41,6 +41,36 @@
 
     }
 
+    .harticlesflex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
+    }
+
+    .reverseflex {
+        flex-direction: row-reverse;
+    }
+
+    .harticlescont {
+        width: 48%;
+        padding: 10px;
+        background: #3685B5;
+    }
+    .wstory {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .wstorycont {
+        width: 48%;
+        padding: 20px;
+        background: #3685B5;
+        margin: 4px;
+    }
+    .wstorycont img {
+        width: 100%;
+    }
 
 }

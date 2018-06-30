@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WITWL | Storm Center</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to our Weather Center, Here you will find information about the weather, and you'll be able to report any storm.">
+    <meta name="keywords" content="what, is, the, weather, like, in, your, city, today, site, current, windchill, franklin, greenville, springfield, gallery, report, storm, center">
+    <meta name="author" content="Marco Antonio Bustillos Quiroz">
+    <meta name="copyright" content="© 2018 Marco Antonio Bustillos Quiroz - All Rights Reserved">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/stormrating.js"></script>
+    <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+
+    </header>
+    <nav class="clearfix" w3-include-html="modules/nav.html">
+
+    </nav>
+
+    <main>
+        <figure>
+
+            <img alt="promo_picture" src="images/stormsmall.jpg" srcset="images/stormsmall.jpg 400w, images/stormmedium.jpg 900w,
+images/stormlarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px) 860px, 1026px">
+        </figure>
+        <h2>Storm Center</h2>
+        <h3 class="stormreporth3">Please report a storm or unusual weather event in your travel area</h3>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="topl">Full Name* <input type="text" name="fullname" pattern="[a-zA-Z].{4,}" required></label>
+                <label class="topl">Email <input type="email" name="email" placeholder="name@example.com"></label>
+                <label class="topl">Phone Number* <input type="tel" name="phone_number" required></label>
+                <label class="topl">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="topl">Storm Date <input type="date" name="storm_date"></label>
+                <label class="topl">Storm Type
+                <input list="stormtype" name="storm_type">
+                <datalist id="stormtype">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+                </datalist>
+                </label>
+                <label for="rating"><span class="stormyrate">Storm Severity (1 to 10)</span><br>
+                <input class="rangesel" type="range" id="rating" name="stormrating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span></label>
+                <label class="topl">Storm Region
+                <select name="storm_region">
+                    <option value="select_region" disabled>Select Region &#9662;</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                </select>
+                </label>
+                <div>Are you in Danger?</div>
+                <label class="sbs"><input type="radio" name="udanger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="udanger" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="udanger" value="no">No</label>
+                <label class="topl">Additional Information or Comments<br>
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+            <div class="sendbuton">
+                <input id="submitbut" type="submit" value="Report">
+            </div>
+        </form>
+
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+
+</html>

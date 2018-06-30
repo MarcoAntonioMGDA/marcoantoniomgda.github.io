@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WITWL | GreenVille City</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to our Weather Center, Here you will find information about the weather, and you'll be able to report any storm.">
+    <meta name="keywords" content="what, is, the, weather, like, in, your, city, today, site, current, windchill, franklin, greenville, springfield, gallery, report, storm, center">
+    <meta name="author" content="Marco Antonio Bustillos Quiroz">
+    <meta name="copyright" content="© 2018 Marco Antonio Bustillos Quiroz - All Rights Reserved">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/greenville.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+
+    </header>
+    <nav class="clearfix" w3-include-html="modules/nav.html">
+
+    </nav>
+
+    <main>
+        <figure>
+            <img alt="promo_picture" src="images/greensmall.jpg" srcset="images/greensmall.jpg 400w, images/greenmedium.jpg 900w,
+images/greenlarge.jpg 1026w" sizes="(max-width: 400px) 360px, (max-width: 900px) 860px, 1026px">
+        </figure>
+        <h2>GreenVille</h2>
+        <script src="scripts/windchill.js"></script>
+        <section class="weather-summary">
+            <h3 class="wst">Weather Summary</h3>
+            <div class="flexweather">
+                <div class="current">
+                    <span id="weatherdescription" class="sunnyblock"></span>
+                    <picture>
+                        <img src="images/weathericon.png" alt="" id="weather_icon">
+                    </picture>
+                </div>
+                <div class="highlow">
+                    <p>High: <b><span id="temphigh"></span> &deg;F</b></p>
+
+
+                    <p>Low: <b><span id="templow"></span> &deg;F</b></p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <b>0%&nbsp;</b></p>
+                    <p>Wind Speed: <b><span id="windspeed"></span> mpg SW</b></p>
+                </div>
+            </div>
+            <h3 class="wst">The Current Weather is: <span id="currentweather"></span></h3>
+            <h3 class="wst">The Wind Chill according our predictions is: <span title="If the Current Weather is Over 50º you won't be able to calculate the windchill" id="windchilout"></span></h3>
+            <h6 class="copyrightowm">We have used an API from <a href="http://openweathermap.org" target="_blank">OpenWeatherMap.org</a></h6>
+
+        </section>
+
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="currentweather1"></td>
+                        <td id="currentweather2"></td>
+                        <td id="currentweather3"></td>
+                        <td id="currentweather4"></td>
+                        <td id="currentweather5"></td>
+                        <td id="currentweather6"></td>
+                        <td id="currentweather7"></td>
+                        <td id="currentweather8"></td>
+                        <td id="currentweather9"></td>
+                        <td id="currentweather10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <script>
+            var towndata = new XMLHttpRequest();
+            var requrl = "https://byui-cit230.github.io/weather/data/towndata.json";
+            towndata.open('GET', requrl, true);
+            towndata.send();
+            towndata.onload = function() {
+                var obtainedata = JSON.parse(towndata.responseText);
+                console.log(obtainedata);
+                document.getElementById("greenname").innerHTML = obtainedata.towns[1].name;
+                document.getElementById("greenmotos").innerHTML = obtainedata.towns[1].motto;
+                document.getElementById("greenyear").innerHTML = obtainedata.towns[1].yearFounded;
+                document.getElementById("greenpopulation").innerHTML = obtainedata.towns[1].currentPopulation;
+                document.getElementById("greenaverage").innerHTML = obtainedata.towns[1].averageRainfall;
+                document.getElementById("greenevent1").innerHTML = obtainedata.towns[1].events[0];
+                document.getElementById("greenevent2").innerHTML = obtainedata.towns[1].events[1];
+                document.getElementById("greenevent3").innerHTML = obtainedata.towns[1].events[2];
+                document.getElementById("greenevent4").innerHTML = obtainedata.towns[1].events[3];
+            }
+        </script>
+        <article>
+            <h3 class="artname"><span id="greenname"></span> Breaks Record</h3>
+            <div class="flexdiv">
+                <div class="flexdivcontent">
+                    <img alt="article picture" src="images/greenville.JPG" class="newpic">
+
+                </div>
+                <div class="town-article flexdivcontent">
+                    <h4><span class="hometitleb2">Moto:</span> <span id="greenmotos" class="homemotos"></span></h4>
+                    <h4><span class="hometitleb2">Year Founded:</span> <span id="greenyear"></span></h4>
+                    <h4><span class="hometitleb2">Current Population:</span> <span id="greenpopulation"></span></h4>
+                    <h4><span class="hometitleb2">Average RainFall:</span> <span id="greenaverage"></span></h4>
+                    <h4 class="homemotos hometitleb2">Events</h4>
+                    <ul>
+                        <li id="greenevent1"></li>
+                        <li id="greenevent2"></li>
+                        <li id="greenevent3"></li>
+                        <li id="greenevent4"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+
+    </footer>
+    <script src="scripts/include.js"></script>
+
+</body>
+
+</html>

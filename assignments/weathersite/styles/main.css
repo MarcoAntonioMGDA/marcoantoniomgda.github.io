@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+
+}
+
+header {
+    background: #89AAE6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+header img {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+
+/* Here the code for nav*/
+
+nav button {
+    color: #ac80a0;
+    margin: .5rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+nav button:hover {
+    color: white;
+}
+
+nav {
+    background-color: #0471a6;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #ac80a0;
+}
+
+.active {
+    background-color: #ac80a0;
+
+}
+
+.active a {
+    color: white;
+}
+
+nav .hide {
+    display: none;
+}
+
+/* here the code for nav */
+
+.flexweather {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+.highlow,
+.current,
+.conditions,
+.sunnyblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.highlow p,
+.conditions p {
+    padding: 10px;
+}
+
+.wst {
+    text-align: center;
+}
+
+#windchilout {
+    background: #3695b5;
+    color: white;
+    font-size: 25px;
+}
+
+
+.current picture img {
+    width: 100px;
+    height: 100px;
+}
+
+.current {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Code for grid*/
+
+.grid {
+    padding: 0% 5% 0% 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+
+.grid img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* Ends here*/
+
+main h2 {
+    text-align: center;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+
+main figure img {
+    width: 100%;
+}
+
+
+
+
+.forecast {
+    text-align: center;
+}
+
+.forecast table {
+    margin: auto
+}
+
+/* Code for Table */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table td {
+    border: 1px solid #3695b5;
+    padding: 8px;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3695b5;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+table td:hover {
+    background: #ddd;
+}
+
+table th:hover {
+    background-color: #3685b5;
+}
+
+/* Here the code for my form */
+
+.stormreporth3 {
+    text-align: center;
+}
+
+form fieldset {
+    margin: 10px;
+    border: 5px solid #0471a6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    -webkit-filter: drop-shadow(6px 6px 8px gray);
+    filter: drop-shadow(6px 6px 8px gray);
+
+}
+
+form legend {
+    color: #0471a6;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+form label.topl,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #a30f0f;
+    font-size: 20px;
+}
+
+
+form label.topl input,
+form label.topl select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+
+}
+
+.sendbuton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+form input#submitbut {
+    border: none;
+    background-color: #ac80a0;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+form input#submitbut:hover {
+    background-color: #674b5f;
+}
+
+form input.rangesel {
+    width: 100%;
+    max-width: 30rem;
+}
+
+form label.topl input:required {
+    border-left: #ac80a0 solid 6px;
+}
+
+form label.topl input:required:valid {
+    border-left: green solid 6px;
+}
+
+.stormyrate {
+    display: block;
+    padding-top: 1rem;
+    color: #a30f0f;
+    font-size: 20px;
+}
+
+#ratingvalue {
+    color: #a30f0f;
+    font-size: 20px;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 30rem;
+    height: 200px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+/*Here I end my code for my table*/
+
+.artname {
+    text-align: center;
+}
+
+.flexdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flexdivcontent {
+    width: 48%;
+    min-width: 230px;
+    padding: 5px;
+}
+
+
+.newpic {
+    width: 100%;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+    border-radius: 10px;
+}
+
+footer {}
+
+.contact,
+.footer-bar {
+    background: #3685B5;
+}
+
+.contact h4 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contactlinks {
+    text-decoration: none;
+    color: #3c2837;
+}
+
+.contactlinks:hover {
+    color: white;
+}
+
+.footer-bar h4 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+#currentdate:hover {
+    text-shadow: 0.2px 0.2px #ac80a0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Home Web Page */
+
+.wstory {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wstorycont {
+    width: 100%;
+    min-width: 236px;
+    padding: 20px;
+    background: #3685B5;
+    margin: 4px;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.wstorycont img {
+    width: 100%;
+}
+
+.homeimgc {
+    width: 100%;
+}
+
+.homemotos {
+    font-style: italic;
+}
+
+.hometitleb {
+    color: #ffffff;
+}
+
+.homecities article {
+    padding: 5px;
+    margin: 2px;
+}
+
+.homecities article:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.harticlescont {
+    background: #3685B5;
+    padding: 10px;
+}
+
+.homeimgc,
+.wstorycont img {
+    border-radius: 20px;
+}
+
+.homeimgc:hover,
+.wstorycont img:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+/* Here buttons code */
+
+.citiesbu div {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background: #ac80a0;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid;
+}
+
+.citiesbu div:hover {
+    background: #88617d;
+}
+
+.citiesbu {
+    text-decoration: none;
+    color: white;
+}
+
+.citiesbu div:hover {
+    color: black;
+}
+
+.hometitleb2 {
+    color: #1a6d6d;
+}
+
+.copyrightowm {
+    text-align: center;
+}
+
+#currentweather {
+    background: #364eb5;
+    color: white;
+    font-size: 20px;
+}
+
+/* This COde ends here*/

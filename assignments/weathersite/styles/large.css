@@ -1,0 +1,49 @@
+@media only screen and (min-width: 64em) {
+    nav ul li a {
+        padding: .6rem 1rem;
+
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0% 5% 0% 5%;
+
+    }
+    .grid img:hover {
+        filter: drop-shadow(8px 8px 10px gray);
+    }
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    .homecities {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .homecities article {
+        width: 32%;
+    }
+
+    .harticlescont {
+        width: 100%;
+    }
+    .wstory {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .wstorycont {
+        width: 49%;
+        padding: 20px;
+        background: #3685B5;
+        margin: 4px;
+    }
+    .wstorycont img {
+        width: 100%;
+    }
+}

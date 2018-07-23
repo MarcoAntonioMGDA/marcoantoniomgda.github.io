@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700');
+@import url('https://fonts.googleapis.com/css?family=Chela+One');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Chela One', cursive;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+
+}
+
+header {
+    background: #bdc667;
+
+}
+
+
+
+header h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.logopic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+/* Here the code for nav*/
+
+nav button {
+    color: #a8bca2;
+    margin: .5rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+nav button:hover {
+    color: white;
+}
+
+nav {
+    background-color: #544343;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #a8bca2;
+    color: black;
+}
+
+
+.active a {
+    color: white;
+}
+
+nav .hide {
+    display: none;
+}
+
+/* here the code for nav */
+
+/* Slider code*/
+
+.mySlides {
+    display: none
+}
+
+.slidepic {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(189, 198, 103, 0.49);
+}
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #a8bca2;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Ends here*/
+
+p,
+li,
+span {
+    font-size: 19.2px;
+}
+
+
+
+/* Code for grid*/
+
+.grid {
+    padding: 0% 3% 0% 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+
+.grid img {
+    width: 100%;
+    /*border-radius: 20px;*/
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.grid img:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.98);
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.grid div {
+    background: #544343;
+}
+
+
+.grid h2 {
+    margin: 0px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.ladinglinks {
+    color: #a8bca2;
+    text-decoration: none;
+}
+
+.ladinglinks:hover {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 30px;
+}
+
+
+
+/* Ends here*/
+
+main h2 {
+    text-align: center;
+}
+
+article {
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 5px solid #1a6d6d;
+    border-radius: 15px;
+}
+
+
+
+.forecast {
+    text-align: center;
+}
+
+.forecast table {
+    margin: auto;
+}
+
+/* Code for Table */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table td {
+    border: 1px solid #a8bca2;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #bdc667;
+    color: black;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+
+table td:hover {
+    background: #ddd;
+}
+
+table th:hover {
+    background-color: #a8bca2;
+}
+
+.yeventintroduction a {
+    color: #a8bca2;
+    text-decoration: none;
+}
+
+.yeventintroduction a:hover {
+    color: white;
+}
+
+/*Here I end my code for my table*/
+
+/* Here the code for my form */
+
+form fieldset {
+    border: 5px solid #1a6d6d;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    -webkit-filter: drop-shadow(6px 6px 8px gray);
+    filter: drop-shadow(6px 6px 8px gray);
+    margin: 10px;
+
+}
+
+form legend {
+    color: #544343;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+form label.entryt,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #515a49;
+    font-size: 20px;
+}
+
+
+form label.entryt input,
+form label.entryt select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+
+}
+
+.sendbuton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0px;
+}
+
+form input#submitbut {
+    border: none;
+    background-color: #544343;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+
+form input#submitbut:hover {
+    background-color: #a8bca2;
+    color: black;
+}
+
+form label.entryt input:required {
+    border-left: #544343 solid 6px;
+}
+
+form label.entryt input:required:valid {
+    border-left: #bdc667 solid 6px;
+}
+
+
+form textarea {
+    width: 100%;
+    max-width: 30rem;
+    height: 200px;
+}
+
+/*Here I end my code for my forms*/
+
+.artname {
+    text-align: center;
+    font-size: 30px;
+}
+
+.flexdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flexdivcontent {
+    width: 48%;
+    min-width: 230px;
+    padding: 5px;
+}
+
+
+.newpic {
+    width: 100%;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+    height: 90%;
+}
+
+
+.footer-bar {
+    background: #bdc667;
+    border-radius: 5px;
+}
+
+
+.footer-bar h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer-bar a {
+    color: #544343;
+    text-decoration: none;
+}
+
+.footer-bar a:hover {
+    color: #515a49;
+}
+
+.webnamef {
+    text-shadow: 0.5px 0.5px black;
+}
+
+#currentdate:hover {
+    text-shadow: 0.2px 0.2px #ac80a0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tourslabels {
+    color: #1a6d6d;
+    font-size: 20px;
+}
+
+/* Events Page */
+
+.yeventname {
+    text-align: center;
+}
+
+.yeventsubtitle {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.yeventintroduction {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #1a6d6d;
+    border-radius: 15px;
+    margin: 3%;
+    color: white;
+    background: #544343;
+    -webkit-filter: drop-shadow(6px 6px 8px gray);
+    filter: drop-shadow(6px 6px 8px gray);
+}
+
+.eventart {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.eventart ul li {
+    list-style: none;
+}
+
+.eventart a {
+    color: black;
+    text-decoration: none;
+}
+
+.eventart a:hover {
+    color: green;
+}
+
+
+/* Contact Page*/
+
+.bussinesmap {
+    width: 90%;
+    height: 200px;
+}
+
+.salestitle {
+    text-align: center;
+}
+
+.picwzoom {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+.picwzoom:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+/* Here buttons code */
+
+.storebuttonp {
+    border: none;
+    background-color: #544343;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.storebuttonp:hover {
+    background-color: #a8bca2;
+    color: black;
+}
+
+.storebuttonp a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.storebuttonp a:hover {
+    color: black;
+}
+
+/* This COde ends here*/
+
+/* The store page  */
+
+.cont80 {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #544343;
+    border-radius: 25px;
+    font-family: sans-serif;
+}
+
+aside {
+    margin: 5px;
+    border: 2px solid #544343;
+    border-radius: 25px;
+    font-family: sans-serif;
+}
+
+aside div {
+    border: 2px solid rgba(84, 67, 67, 0.06);
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+aside h1 {
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.resourcepic {
+    width: 100%;
+}

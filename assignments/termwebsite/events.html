@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke | Events</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to The Mountain Spoke from Montana, the best place in the world where the mountains call you home. So You're invited to discover everything about bicycles, tours, events, sales, reparation service, even you have our online store">
+    <meta name="keywords" content="the, mountain, spoke, bicycles, montana, bozeman, bikes, tours, tour, event, events, sales, repair, reparation, service, online, store, buy, new, adventures">
+    <meta name="author" content="Marco Antonio Bustillos Quiroz">
+    <meta name="copyright" content="© 2018 Marco Antonio Bustillos Quiroz - All Rights Reserved">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+
+    </header>
+    <nav class="clearfix" w3-include-html="modules/nav.html">
+
+    </nav>
+
+    <main>
+        <h1 class="yeventname">Welcome to "Cycle the Continental Divide" Event </h1>
+        <h2 class="yeventsubtitle">This is the most important yearly event, sponsored by us</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/events/slide1.jpg" style="width:100%">
+                <div class="text">Meet People around the world</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/events/slide2.jpg" style="width:100%">
+                <div class="text">Bring your team</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/events/slide3.jpg" style="width:100%">
+                <div class="text">The most awaited Yearly Event</div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <br>
+        <p class="yeventintroduction">Many people around the world gathers in our wonderful city to the best experience of their lifes, so we invite you to come and partake where the mountains call you home, and you'll finally find peace and happiness</p>
+
+        <article class="eventart">
+            <h4><span class="tourslabels">Dates :</span> <span>August 11th / 18th, 2018</span></h4>
+            <h4><span class="tourslabels">Route :</span> <span>74.28 KM, see the Premium Tour for reference</span></h4>
+            <h4><span class="tourslabels">Required Skills :</span> <span>Advanced</span></h4>
+            <h4><span class="tourslabels">Required Bikes :</span> <span>Mountain Bikes</span></h4>
+            <h4><span class="tourslabels">Required Helmets, etc :</span> <span>All Protection Supplements</span></h4>
+            <h4><span class="tourslabels">Cost :</span> <span style="font-size: 50px; color: green;">$660.30</span></h4>
+            <div class="storebuttonp"><a href="store.html#!/Cycle-the-Continental-Divide-Event/p/111688666/category=0" target="_blank">Pay</a></div>
+            <h4 class="tourslabels">Route Location</h4>
+            <ul>
+                <li><a href="https://www.google.com/maps/d/viewer?mid=1gkBDorX72-o8H-Z6QeJ2Cif79ANjR9Eb&ll=45.720474747709396%2C-111.19205&z=11" target="_blank">25291 MT-84, Bozeman, MT 59718, USA</a></li>
+            </ul>
+        </article>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Registry for this Event</legend>
+                <label class="entryt">Full Name* <input type="text" name="fullname" pattern="[a-zA-Z].{6,}" required></label>
+                <label class="entryt">Email* <input type="email" name="email" placeholder="name@example.com" required></label>
+                <label class="entryt">Phone Number* <input type="tel" name="phone_number" required></label>
+                <label class="entryt">Date of Birth* <input type="date" name="birth_date" required></label>
+                <label class="entryt">Home State or Contry <input type="text" name="state_country"></label>
+                <label class="entryt">Day you'll participate
+                <select name="participate_day">
+                    <option value="select_day" disabled>Select the day you want to participate &#9662;</option>
+                    <option value="agu11">August 11th</option>
+                    <option value="agu18">August 18th</option>
+                    <option value="anydate">Any Date</option>
+                </select>
+                </label>
+                <label class="entryt">Special Accommodations or comments<br>
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+            <div class="sendbuton">
+                <input id="submitbut" type="submit" value="Registry">
+            </div>
+        </form>
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+
+    </footer>
+    <script src="scripts/include.js"></script>
+
+</body>
+
+</html>

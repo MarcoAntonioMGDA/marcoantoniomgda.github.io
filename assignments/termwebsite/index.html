@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke | Home</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to The Mountain Spoke from Montana, the best place in the world where the mountains call you home. So You're invited to discover everything about bicycles, tours, events, sales, reparation service, even you have our online store">
+    <meta name="keywords" content="the, mountain, spoke, bicycles, montana, bozeman, bikes, tours, tour, event, events, sales, repair, reparation, service, online, store, buy, new, adventures">
+    <meta name="author" content="Marco Antonio Bustillos Quiroz">
+    <meta name="copyright" content="© 2018 Marco Antonio Bustillos Quiroz - All Rights Reserved">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96557190"></script>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+
+    </header>
+    <nav class="clearfix" w3-include-html="modules/nav.html">
+
+    </nav>
+
+    <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade" style="100%;">
+                <div class="numbertext">1 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/slider/slide1.jpg" style="width:100%">
+                <div class="text">Where is your next aventure?</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/slider/slide2.jpg" style="width:100%">
+                <div class="text">Great Events are waiting for you</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/slider/slide3.jpg" style="width:100%">
+                <div class="text">Every day we have amazing tours</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img class="slidepic" alt="picture in the slider" src="images/slider/slide4.jpg" style="width:100%">
+                <div class="text">The Best Bikes Sales on our Store</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </script>
+        <div class="grid">
+            <div>
+                <img alt="gallerypic" src="images/homegrids/1.jpg">
+                <h2><a href="tours.html" class="ladinglinks">Tours</a></h2>
+            </div>
+            <div>
+                <img alt="gallerypic" src="images/homegrids/2.jpg">
+                <h2><a href="events.html" class="ladinglinks">Events</a></h2>
+            </div>
+            <div>
+                <img alt="gallerypic" src="images/homegrids/3.jpg">
+                <h2><a href="sales.html" class="ladinglinks">Sales</a></h2>
+            </div>
+            <div>
+                <img alt="gallerypic" src="images/homegrids/4.jpg">
+                <h2><a href="store.html" class="ladinglinks">Online Store</a></h2>
+            </div>
+            <div>
+                <img alt="gallerypic" src="images/homegrids/5.jpg">
+                <h2><a href="service.html" class="ladinglinks">Service</a></h2>
+            </div>
+            <div>
+                <img alt="gallerypic" src="images/homegrids/6.jpg">
+                <h2><a href="contact.html" class="ladinglinks">Contact Us</a></h2>
+            </div>
+        </div>
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+
+    </footer>
+    <script src="scripts/include.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+@media only screen and (min-width: 64em) {
+    nav ul li a {
+        padding: .6rem 1rem;
+
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        -webkit-column-gap: 20px;
+        column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0% 3% 0% 3%;
+    }
+
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    .eventart {
+        margin-left: 30%;
+        margin-right: 30%;
+
+    }
+
+    form {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .bussinesmap {
+        width: 90%;
+        height: 500px;
+    }
+
+    .storeflex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .cont80 {
+        width: 74%;
+
+
+    }
+
+    aside {
+
+        width: 24%;
+    }
+
+}
